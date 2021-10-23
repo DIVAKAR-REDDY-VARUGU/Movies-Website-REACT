@@ -1,0 +1,66 @@
+
+.App{
+  display:flex;
+  justify-content:center;
+}
+.body--wrapper{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+}
+.searchBar{
+  border:none;  
+  background-color: #131b20;
+  color: #fff;
+  padding: 0.5em 2em;
+  text-align: center;
+  width: 80%;
+}
+.searchBar--wrapper{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content:center;
+  margin: 1.5em 0 3em;
+  }
+.moviePosters--wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.poster--pack{
+  width: 13%;
+  height:250px;
+  box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+  margin: 10px 10px 10px 0;
+}
+.poster--pack:hover{
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.486);
+    transform: translateY(10);
+}
+.poster--img{
+  width: 100%;
+}
+.poster--name{
+  padding: 1em;
+}
+.poster--name p{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin: 0;
+}
+.error--wrapper{
+  font-size:48px;
+}
+.error404{
+  color:rgba(238, 100, 9, 0.884);
+}
+@media (max-width: 480px) 
+{
+  .moviePosters--wrapper{
+    justify-content: center;
+  }
+  .poster--pack{
+    width: 40%;
+    margin-left:20px;
+  }
+}
